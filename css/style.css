@@ -1,0 +1,362 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+    display: block;
+}
+
+.container{
+    width: 1170px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+body{
+    font-family: 'Open Sans', sans-serif;;
+}
+
+
+.button{
+    background-color: #cfc91d;
+    color: black;
+    padding: 19px 42px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+
+.heading h2{
+    color: #02918c;
+    font-size: 46px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.heading p{
+    color: #7e8287;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* navigation Bar Start */
+nav{
+    background-color: #02918c;
+    
+
+}
+nav .row{
+    align-items: center;
+}
+nav .logo{
+    width: 30%;
+    
+}
+nav .menu{
+    width: 70%;
+    text-align: right;
+    
+}
+nav .menu li{
+    display: inline-block;
+}
+
+nav .menu li a{
+    font-weight: 800;
+    color: #ffff;
+    font-size: 16px;
+    padding: 26px 25px;
+    display: block;
+
+}
+/* navigation Bar ends */
+
+
+/* Banner Starts */
+#banner{
+    background-image: url(../images/MYFOLIO.jpg);
+    height: 728px;
+    background-size: cover;
+    background-position: center;
+}
+#banner .row{
+    align-items: center;
+    height: 728px;
+}
+.banner-text{
+    text-align: center;
+    width: 100%;
+}
+.banner-text h3{
+    color: #ffff;
+    font-weight: 400;
+    font-size: 30px;
+
+}
+.banner-text h1{
+    color: #ffff;
+    font-weight: 800;
+    font-size: 68px;
+    text-transform: uppercase;
+    letter-spacing: 25px;
+
+}
+
+.banner-text p{
+    color: #ffff;
+    font-weight: 400;
+    font-size: 18px;
+
+}
+.banner-text img{
+    margin: 50px 0;
+}
+
+/* Banner ends */
+
+
+/* about Section starts */
+
+.heading{
+    text-align: center;
+}
+
+#about{
+    padding: 98px 0;
+}
+
+.paragraph p{
+    text-align: center;
+    font-size: 16px;
+    color: #7e8287;
+
+}
+span{
+    font-size: 23px;
+}
+
+.aboutcard{
+    width: 25%;
+    padding: 60px 0;
+    text-align: center;
+    border-right: 1px solid #7e8287 ;
+}
+
+.aboutcard:nth-child(4){
+    border: none;
+}
+
+.aboutcard i{
+    font-size: 35px;
+    font-weight: 800;
+    color: #02918c;
+}
+
+.aboutcard h5{
+    font-size: 16px;
+    font-weight: 800;
+    color: #7e8287;
+    padding: 28px 0;
+}
+
+.aboutcard p{
+    font-size: 11px;
+    font-weight: 400;
+    color: #7e8287;
+}
+/* about Section ends */
+
+/* services Section starts */
+
+#services{
+    background-image: url(../images/MYFOLIO-03.jpg);
+    background-size: cover;
+    height: 728px;
+    background-position: left;
+}
+
+#services .heading{
+    text-align: left;
+    padding: 60px 0;
+}
+
+.paragraph1 p{
+    font-size: 16px;
+    text-align: left;
+    color: #7e8287;
+    font-weight: 400;
+}
+.services_left{
+    width: 50%;
+    
+}
+
+.services_card{
+    width: 50%;
+    text-align: left;
+    
+    
+}
+
+.services_card i{
+    font-size: 35px;
+    font-weight: 800;
+    color: #02918c;
+    padding-top: 28px;
+}
+
+.services_card h5{
+    font-size: 16px;
+    font-weight: 800;
+    color: #7e8287;
+    padding: 28px 0;
+}
+
+.services_card p{
+    font-size: 11px;
+    font-weight: 400;
+    color: #7e8287;
+    
+}
+
+
+
+/* services Section ends */
+
+/* my work section starts */
+
+#work{
+    padding: 98px;
+}
+.work p{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: #7e8287;
+}
+
+.work_card{
+    width: 25%;
+    position: relative;
+}
+
+.work_card img{
+    width: 100%;
+
+}
+
+.work_card .overlay{
+    position: absolute;
+    inset: 23px 27px;
+    text-align: center;
+    background-color: #02918c9f;
+    padding-top: 60px;
+    color: white;
+    opacity: 0;
+    visibility: hidden;
+    margin-top: 50px;
+    transition: 0.5s;
+
+}
+
+.work_card h5{
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.work_card p{
+    font-size: 11px;
+    font-weight: 400;
+}
+
+.work_card:hover .overlay{
+    opacity: 1;
+    visibility: visible;
+    margin-top: 0;
+}
+
+/* my work section ends */
+
+/* contact starts */
+
+#contact{
+    padding: 98px;
+}
+
+.contact_me p{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: #7e8287;
+    
+}
+
+/* contact ends */
+
+/* forms starts */
+.submit{
+    background-color: #0b0b0b;
+    padding: 70px;
+
+}
+
+
+.submitcard{
+    text-align: center;
+    color: #7e8287;
+    
+    
+}
+
+.submit .name{
+    font-size: 16px;
+    font-weight: 400;
+    padding: 70px 0;
+}
+
+.submit .email{
+    font-size: 16px;
+    font-weight: 400;
+    padding: 60px 0;
+}
+
+.submit .subject{
+    font-size: 16px;
+    font-weight: 400;
+    padding: 60px 0;
+}
+
+.submit .message{
+    font-size: 16px;
+    font-weight: 400;
+    padding: 60px 0;
+}
+
+.submit .submit_button{
+    padding: 60px;
+}
+
+/* forms ends */
+
+.folio{
+    background-color: #000000;
+}
+.folio p{
+    font-size: 16px;
+    font-weight: 400;
+    padding: 20px;
+    color: #7e8287;
+    text-align: center;
+}
